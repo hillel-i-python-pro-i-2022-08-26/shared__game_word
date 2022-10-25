@@ -1,0 +1,15 @@
+# Core
+django==4.1.2
+
+# [code_style]-[BEGIN]
+# Pre-commit hook.
+pre-commit==2.20.0
+# Upgrade syntax.
+pyupgrade==3.1.0
+# Formatter. Apply codestyle.
+black==22.10.0
+# Check codestyle
+flake8==5.0.4
+# Removes unused imports and unused variables
+autoflake==1.7.7
+# [code_style]-[END]
