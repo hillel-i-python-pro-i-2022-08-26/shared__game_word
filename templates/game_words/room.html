@@ -1,0 +1,29 @@
+{% extends '_helpers/_base.html' %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">
+            Say
+        </button>
+    </form>
+
+    <div>
+        <ul>
+            {% for word in words %}
+                <li>
+            <span>
+                {{ word.word }}
+            </span>
+                    <span>
+                -
+            </span>
+                    <span>
+                {{ word.created_at }}
+            </span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
